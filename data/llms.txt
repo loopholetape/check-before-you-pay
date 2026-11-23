@@ -8,19 +8,19 @@ It covers 66 subnets, which are the ones whose entry fee stood at $1 or more at 
 
 ## When to use it, and how
 
-If you are about to register on subnet N, fetch [c/N.md](https://check.loopholetape.com/c/N.md) and read the section "If you are about to pay the entry fee". It gives the fee now, how many of the entries made 2 to 14 days ago are still in, what a typical one of them is paid a day today, and how many days today's fee takes to come back at that pay. The next section says whether the subnet is full and how long a new entry is protected from removal.
+If you are about to register on a subnet, fetch the file c/ followed by the subnet's number and .md, which for subnet 5 is [c/5.md](https://check.loopholetape.com/c/5.md), and read the section "If you are about to pay the entry fee". It gives the fee now, how many of the entries made 2 to 14 days ago are still in, what a typical one of them is paid a day today, and how many days today's fee takes to come back at that pay. The next section says whether the subnet is full and how long a new entry is protected from removal.
 
 If you are choosing where to enter, fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row per subnet with the same numbers, and then read the page of any subnet that looks worth a closer look, because one row cannot carry what a page can.
 
-If you want the record of a wallet, your own or anyone's, fetch wallet/COLDKEY.json, where COLDKEY is the SS58 address that pays the fees, not the hotkey of a single entry.
+If you want the record of a wallet, your own or anyone's, fetch the file wallet/ followed by the wallet's SS58 address and .json, where the address is the coldkey that pays the fees and not the hotkey of a single entry.
 
 ## Addresses
 
 - [contests.md](https://check.loopholetape.com/contests.md): every covered subnet, one row each, with a paragraph on how to read the columns.
 - [contests.json](https://check.loopholetape.com/contests.json): the same as data. Every field is described under "fields", with nested fields written as group.field.
-- c/N.md, for example [c/5.md](https://check.loopholetape.com/c/5.md): one subnet in plain sentences, with its week-by-week and day-by-day record.
-- c/N.json: one subnet as data, with its 20 most recent entries.
-- wallet/COLDKEY.json: the entries one wallet made in the last 30 days, with the fee each paid, what each was paid back and what each is paid today.
+- c/ followed by a subnet's number and .md, for example [c/5.md](https://check.loopholetape.com/c/5.md): one subnet in plain sentences, with its week-by-week and day-by-day record.
+- c/ followed by a subnet's number and .json: one subnet as data, with its 20 most recent entries.
+- wallet/ followed by a wallet's SS58 address and .json: the entries one wallet made in the last 30 days, with the fee each paid, what each was paid back and what each is paid today.
 - [method.html](https://check.loopholetape.com/method.html): how every figure is measured, for a person to read.
 - [pay.md](https://check.loopholetape.com/pay.md): how to buy a pack, which is the one thing on this site that costs money.
 

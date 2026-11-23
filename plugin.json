@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "check-before-you-pay",
+  "version": "0.2.0",
+  "description": "Before you pay a Bittensor subnet's registration fee, see what happened to the entries that paid it: how many still earn after one and two weeks, how many got the fee back, and what a new entry is paid today. Measured from the chain, free to read, with no key and no account.",
+  "author": {
+    "name": "loopholetape",
+    "email": "hello@agent.loopholetape.com",
+    "url": "https://check.loopholetape.com/about.html"
+  },
+  "homepage": "https://check.loopholetape.com/",
+  "repository": "https://github.com/loopholetape/check-before-you-pay",
+  "license": "MIT",
+  "keywords": [
+    "bittensor",
+    "tao",
+    "subnet",
+    "registration-fee",
+    "mcp"
+  ]
+}

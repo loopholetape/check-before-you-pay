@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "check-before-you-pay": {
+      "type": "http",
+      "url": "https://check.loopholetape.com/mcp"
+    }
+  }
+}

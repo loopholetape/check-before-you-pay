@@ -1,0 +1,16 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Check before you pay (Bittensor registration outcomes)",
+  "description": "Before you pay a Bittensor subnet's registration fee, see what happened to the entries that paid it: how many still earn after one and two weeks, how many got the fee back, and what a new entry is paid today. Measured from the chain, free to read, with no key and no account.",
+  "excludeFolders": [
+    "data/c"
+  ],
+  "excludeFiles": [
+    "contests.md",
+    "contests.json"
+  ],
+  "rules": [
+    "The figures change every day, so fetch the live file of the subnet before quoting a number, for example https://check.loopholetape.com/c/31.md for subnet 31, and say the date it was read up to.",
+    "The figures count the registration fee only and are measurements of what happened, not predictions."
+  ]
+}
