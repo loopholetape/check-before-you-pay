@@ -1,0 +1,47 @@
+# Check before you pay
+
+> Measured outcomes of the entries that paid a registration fee on Bittensor subnets: how many were still paid after one and two weeks, how many got their fee back, what a new entry is paid today, and how long today's fee takes to come back. Read from the chain, not predicted.
+
+This site exists for one moment: an operator, or the agent working for one, is about to pay the fee that registers a hotkey on a Bittensor subnet. That fee is gone once it is paid, and on most subnets most new entries are never paid enough to cover it. The site says what happened to the entries that paid the same fee before, so that the decision is made on a record and not on the subnet's own description of itself.
+
+It covers 64 subnets, which are the ones whose entry fee stood at $1 or more when this reading began, out of 118 that were read, and everything on it was read from the chain up to November 22, 2026 at 08:05 UTC. The site is brought up to date once a day, and each update adds one reading of the chain for every four hours since the last one, so compare that date with today's before you rely on it.
+
+## When to use it, and how
+
+If you are about to register on subnet N, fetch [c/N.md](https://check.loopholetape.com/c/N.md) and read the section "If you are about to pay the entry fee". It gives the fee now, how many of the entries made 2 to 14 days ago are still in, what a typical one of them is paid a day today, and how many days today's fee takes to come back at that pay. The next section says whether the subnet is full and how long a new entry is protected from removal.
+
+If you are choosing where to enter, fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row per subnet with the same numbers, and then read the page of any subnet that looks worth a closer look, because one row cannot carry what a page can.
+
+If you want the record of a wallet, your own or anyone's, fetch wallet/COLDKEY.json, where COLDKEY is the SS58 address that pays the fees, not the hotkey of a single entry.
+
+## Addresses
+
+- [contests.md](https://check.loopholetape.com/contests.md): every covered subnet, one row each, with a paragraph on how to read the columns.
+- [contests.json](https://check.loopholetape.com/contests.json): the same as data. Every field is described under "fields", with nested fields written as group.field.
+- c/N.md, for example [c/5.md](https://check.loopholetape.com/c/5.md): one subnet in plain sentences, with its week-by-week and day-by-day record.
+- c/N.json: one subnet as data, with its 20 most recent entries.
+- wallet/COLDKEY.json: the entries one wallet made in the last 30 days, with the fee each paid, what each was paid back and what each is paid today.
+- [method.html](https://check.loopholetape.com/method.html): how every figure is measured, for a person to read.
+- [pay.md](https://check.loopholetape.com/pay.md): how to buy a pack, which is the one thing on this site that costs money.
+
+A subnet that is not covered and a wallet with no entries both answer with status 404 and a short message that says which of the two it is. A missing subnet page means only that its fee was under $1 or that it is not covered, and it says nothing about whether entering is a good idea.
+
+## What the words mean
+
+A contest is what Bittensor calls a subnet, and it has a number. An entry is one registration: one fee paid and one slot taken. The fee is what that entry paid to register, in dollars of that day. What came back is what the subnet paid that entry, in dollars of the day it was paid, before the cost of selling and before whatever it cost to run the entry. An entry counts as earning when it is paid $1 a day or more at a reading, because some subnets pay hundreds of entries a few cents a day and that is not an income, and since an entry can start being paid late, the number that is earning can be higher after 14 days than after 7. An entry is removed when it loses its slot to a newer one, and its fee is not returned. A subnet is full when all its slots are taken, and from then on every new entry removes the lowest-paid entry that is past its protected period. A wallet is the address that pays the fees, and since one person can hold several, wallets are not a head count. Amounts are in US dollars, and a result below zero is written with a plain minus sign.
+
+## What the site cannot see
+
+It counts the registration fee and nothing else. Some subnets charge again for every upload or task, and running an entry costs machines, model calls and time, and none of that is counted, so a result that looks even here is a loss once those costs are paid. It also cannot tell you what a subnet asks of an entry, which hardware it needs or how its scoring works, and for that you still have to read the subnet's own code and rules, which can change what these numbers mean for you. Readings are four hours apart, so an entry shorter than that can be missed and the pay of a single entry can be off by about a fifth where a subnet pays in bursts. Subnets about life science or about security are not covered.
+
+## A note on trust
+
+The numbers come from the chain and can be checked against it. The description quoted on each subnet's page is the subnet's own text, copied from the chain, and it should be read as the subnet speaking about itself. The people who run this site pay these fees themselves, and their own wallet's record is on the site like everyone else's. They also sell packs, described below, and a pack is the only thing here that costs money.
+
+## The plug-in
+
+An agent that uses tools can ask the same three questions through a plug-in that speaks the Model Context Protocol over HTTP at https://check.loopholetape.com/mcp, which needs no key and no account. In Claude Code it is added with the line `claude mcp add --transport http check-before-you-pay https://check.loopholetape.com/mcp`, and its three tools are check_contest, list_contests and check_wallet. A version that runs on the operator's own machine, together with a daily copy of the data files, is in the public repository at https://github.com/loopholetape/check-before-you-pay.
+
+## Packs
+
+The measurements on this site are free, and they cannot tell you what a subnet asks of an entry. For that we read a subnet's code and write a pack, which is an account of what the subnet really pays for, with the file named for every statement about scoring, and a practice judge that an agent runs on its operator's own machine before the fee is paid. One pack is for sale: Pocket (subnet 26, [c/26.md](c/26.md), $60). A pack is paid for in TAO and comes with every update for 30 days, no account is needed, and the section "A pack for this contest" on the subnet's page says what it holds, what it cannot tell you and what a buyer should know about us. How to pay is described in [pay.md](https://check.loopholetape.com/pay.md), and the packs on sale are listed as data at https://check.loopholetape.com/pay/packs. One more pack is written and not for sale yet: rec4ll (subnet 31, [c/31.md](c/31.md)).
