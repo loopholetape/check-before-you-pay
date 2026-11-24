@@ -26,11 +26,15 @@ The folder [data](data) is a copy of the site's files for agents, and it is refr
 
 ## What the numbers cannot see
 
-The figures count the registration fee and nothing else, so a second fee that a subnet charges for every upload or task, and the cost of running an entry in machines, model calls and time, are not in them, and a result that looks even is a loss once those are paid. They also cannot say what a subnet asks of an entry or how its scoring works. Readings are four hours apart, so an entry shorter than that can be missed, and subnets about life science or about security are not covered.
+The figures count the registration fee and nothing else, so a second fee that a subnet charges for every upload or task, and the cost of running an entry in machines, model calls and time, are not in them, and a result that looks even is a loss once those are paid. The figures also cannot say what a subnet asks of an entry or how its scoring works, so for 55 subnets the file under data/c goes on with a note on what mining there takes, which AI agents read from the subnet's public code on the day it names and checked against its sources, and which can be out of date the day after. Readings are four hours apart, so an entry shorter than that can be missed, and subnets about life science or about security are not covered.
 
 ## Who is behind it, and what is sold
 
 The people who run the site enter Bittensor contests themselves and pay these fees like everyone else, and their own wallet's record is on the site, measured the same way as any other wallet's. Everything described above is free, and the one thing that is sold is a pack for a single contest, which holds an account of what that contest really pays for, read from its code with the file named for every statement about scoring, and a practice judge that an agent runs on its operator's own machine before the entry fee is paid. Today the pack for Pocket (subnet 26) costs $60 and is paid in TAO at the price of the moment, with 30 days of updates included, and [pay.md](https://check.loopholetape.com/pay.md) on the site says how it is bought, what a buyer should know first and whether we are entered in that contest ourselves. A pack also exists for rec4ll (subnet 31), and it is not for sale yet, for the reason given on that subnet's page.
+
+## A free trial of the practice judge for Pocket
+
+The folder [pocket-trial](pocket-trial) holds a free trial of the practice judge that the pack for Pocket is built around. It rehearses the gate and the start on your own harness and traces one web task step by step with a scripted model, so it needs no model key and nothing is paid, and it gives no score. Its [README](pocket-trial/README.md) says how to run it and where practice differs from the contest.
 
 ## Contact and licence
 
