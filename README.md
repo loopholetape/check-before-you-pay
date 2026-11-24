@@ -4,7 +4,7 @@ This repository holds the daily data and the plug-in of [Check before you pay](h
 
 ## How an agent reads it
 
-An agent that is about to register on subnet N can fetch `https://check.loopholetape.com/c/N.md` and read the section "If you are about to pay the entry fee", and an agent that is still choosing where to enter can fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row for each of the 66 subnets that are covered. The file [llms.txt](https://check.loopholetape.com/llms.txt) says what is where and what every word means. The record of a single wallet is at `https://check.loopholetape.com/wallet/COLDKEY.json`, where COLDKEY is the address that pays the fees and not the hotkey of one entry.
+An agent that is about to register on subnet N can fetch `https://check.loopholetape.com/c/N.md` and read the section "If you are about to pay the entry fee", and an agent that is still choosing where to enter can fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row for each of the 65 subnets that are covered. The file [llms.txt](https://check.loopholetape.com/llms.txt) says what is where and what every word means. The record of a single wallet is at `https://check.loopholetape.com/wallet/COLDKEY.json`, where COLDKEY is the address that pays the fees and not the hotkey of one entry.
 
 ## The plug-in
 
@@ -22,11 +22,11 @@ claude mcp add check-before-you-pay -- python3 /path/to/mcp_server.py --base htt
 
 ## The data in this repository
 
-The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 66 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 23, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
+The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 65 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 24, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
 
 ## What the numbers cannot see
 
-The figures count the registration fee and nothing else, so a second fee that a subnet charges for every upload or task, and the cost of running an entry in machines, model calls and time, are not in them, and a result that looks even is a loss once those are paid. The figures also cannot say what a subnet asks of an entry or how its scoring works, so for 55 subnets the file under data/c goes on with a note on what mining there takes, which AI agents read from the subnet's public code on the day it names and checked against its sources, and which can be out of date the day after. Readings are four hours apart, so an entry shorter than that can be missed, and subnets about life science or about security are not covered.
+The figures count the registration fee and nothing else, so a second fee that a subnet charges for every upload or task, and the cost of running an entry in machines, model calls and time, are not in them, and a result that looks even is a loss once those are paid. The figures also cannot say what a subnet asks of an entry or how its scoring works, so for 54 subnets the file under data/c goes on with a note on what mining there takes, which AI agents read from the subnet's public code on the day it names and checked against its sources, and which can be out of date the day after. Readings are four hours apart, so an entry shorter than that can be missed, and subnets about life science or about security are not covered.
 
 ## Who is behind it, and what is sold
 
