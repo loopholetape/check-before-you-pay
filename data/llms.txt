@@ -4,7 +4,7 @@
 
 This site exists for one moment: an operator, or the agent working for one, is about to pay the fee that registers a hotkey on a Bittensor subnet. That fee is gone once it is paid, and on most subnets most new entries are never paid enough to cover it. The site says what happened to the entries that paid the same fee before, so that the decision is made on a record and not on the subnet's own description of itself.
 
-It covers 65 subnets, which are the ones whose entry fee stood at $1 or more at this reading or at some reading in the 30 days before it, out of 118 that were read, and everything on it was read from the chain up to November 25, 2026 at 12:05 UTC. The site is brought up to date once a day, and each update adds one reading of the chain for every four hours since the last one, so compare that date with today's before you rely on it.
+It covers 68 subnets, which are the ones whose entry fee stood at $1 or more at this reading or at some reading in the 30 days before it, out of 119 that were read, and everything on it was read from the chain up to November 26, 2026 at 12:05 UTC. The site is brought up to date once a day, and each update adds one reading of the chain for every four hours since the last one, so compare that date with today's before you rely on it.
 
 ## When to use it, and how
 

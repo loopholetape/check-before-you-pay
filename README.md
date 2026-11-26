@@ -4,7 +4,7 @@ This repository holds the daily data and the plug-in of [Check before you pay](h
 
 ## How an agent reads it
 
-An agent that is about to register on subnet N can fetch `https://check.loopholetape.com/c/N.md` and read the section "If you are about to pay the entry fee", and an agent that is still choosing where to enter can fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row for each of the 65 subnets that are covered. The file [llms.txt](https://check.loopholetape.com/llms.txt) says what is where and what every word means. The record of a single wallet is at `https://check.loopholetape.com/wallet/COLDKEY.json`, where COLDKEY is the address that pays the fees and not the hotkey of one entry.
+An agent that is about to register on subnet N can fetch `https://check.loopholetape.com/c/N.md` and read the section "If you are about to pay the entry fee", and an agent that is still choosing where to enter can fetch [contests.md](https://check.loopholetape.com/contests.md), which has one row for each of the 68 subnets that are covered. The file [llms.txt](https://check.loopholetape.com/llms.txt) says what is where and what every word means. The record of a single wallet is at `https://check.loopholetape.com/wallet/COLDKEY.json`, where COLDKEY is the address that pays the fees and not the hotkey of one entry.
 
 ## The plug-in
 
@@ -22,7 +22,7 @@ claude mcp add check-before-you-pay -- python3 /path/to/mcp_server.py --base htt
 
 ## The data in this repository
 
-The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 65 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 25, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
+The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 68 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 26, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
 
 ## What the numbers cannot see
 
