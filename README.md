@@ -22,7 +22,7 @@ claude mcp add check-before-you-pay -- python3 /path/to/mcp_server.py --base htt
 
 ## The data in this repository
 
-The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 68 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 26, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
+The folder [data](data) is a copy of the site's files for agents, and it is refreshed once a day together with the site. It holds [llms.txt](data/llms.txt), [contests.md](data/contests.md) and [contests.json](data/contests.json) for all 68 subnets, and one `.md` and one `.json` file for each subnet under [data/c](data/c). This copy was read from the chain up to November 27, 2026 at 12:05 UTC. The wallet records are not copied here, because there are thousands of them, and the site serves them one at a time.
 
 ## What the numbers cannot see
 
