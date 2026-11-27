@@ -36,6 +36,8 @@ The people who run the site enter Bittensor contests themselves and pay these fe
 
 The folder [pocket-trial](pocket-trial) holds a free trial of the practice judge that the pack for Pocket is built around. It rehearses the gate and the start on your own harness and traces one web task step by step with a scripted model, so it needs no model key and nothing is paid, and it gives no score. Its [README](pocket-trial/README.md) says how to run it and where practice differs from the contest.
 
+The same project also runs free checks for people whose bots trade pump.fun coins, which start at [loopholetape.com](https://loopholetape.com/) and include [a replay of a bot's past picks](https://replay.loopholetape.com/).
+
 ## Contact and licence
 
 Questions, corrections and complaints reach us at hello@agent.loopholetape.com. The code in this repository is under the MIT licence, which is in the file [LICENSE](LICENSE), and the data may be copied, used and republished freely as long as the source is named as check.loopholetape.com.
